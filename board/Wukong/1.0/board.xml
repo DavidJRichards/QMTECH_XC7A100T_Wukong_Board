@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<board schema_version="2.0" vendor="AliExpress" name="Wukong" display_name="Wukong" url="https://github.com/ChinaQMTECH/XC7A100T-200T_Wukong_Board" preset_file="preset.xml" >
+  <images>
+    <image name="Wukong.jpg" display_name="Wukong" sub_type="board">
+      <description>Wukong Board File Image</description>
+    </image>
+  </images>
+<compatible_board_revisions>
+  <revision id="0">1.0</revision>
+</compatible_board_revisions>
+<file_version>1.0</file_version>
+<description>Wukong</description>
+<components>
+  <component name="part0" display_name="Wukong" type="fpga" part_name="xc7a100tfgg676-2" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://github.com/ChinaQMTECH/XC7A100T-200T_Wukong_Board">
+    <interfaces>
+
+
+        <interface mode="master" name="pl_sw_1bit" type="xilinx.com:interface:gpio_rtl:1.0" of_component="pl_sw_1bit" preset_proc="pl_sw_1bit_preset">
+        	<description>1 DIP switch</description>
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+          <port_maps>
+            <port_map logical_port="TRI_I" physical_port="pl_sw_1bit_tri_i" dir="in"> 
+              <pin_maps>
+                <pin_map port_index="0" component_pin="pl_sw_1bit_tri_i"/> 
+              </pin_maps>
+            </port_map>
+          </port_maps>
+        </interface>
+        <interface mode="master" name="pl_led_r" type="xilinx.com:interface:gpio_rtl:1.0" of_component="pl_led_r" preset_proc="pl_led_r_preset">
+        	<description>Red LED</description>
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+          <port_maps>
+            <port_map logical_port="TRI_O" physical_port="pl_led_r_tri_o" dir="out"> 
+              <pin_maps>
+                <pin_map port_index="0" component_pin="pl_led_r_tri_o"/> 
+              </pin_maps>
+            </port_map>
+          </port_maps>
+        </interface>
+        <interface mode="master" name="pl_led_g" type="xilinx.com:interface:gpio_rtl:1.0" of_component="pl_led_g" preset_proc="pl_led_g_preset">
+        	<description>Green LED</description>
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+          <port_maps>
+            <port_map logical_port="TRI_O" physical_port="pl_led_g_tri_o" dir="out"> 
+              <pin_maps>
+                <pin_map port_index="0" component_pin="pl_led_g_tri_o"/> 
+              </pin_maps>
+            </port_map>
+          </port_maps>
+        </interface>
+      <interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset"> 
+      </interface>
+	  <interface mode="master" name="pmoda" type="digilentinc.com:interface:pmod_rtl:1.0" of_component="pmoda">
+        <port_maps>
+          <port_map logical_port="PIN1_I" physical_port="JA1" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA1"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN1_O" physical_port="JA1" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA1"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN1_T" physical_port="JA1" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA1"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN2_I" physical_port="JA2" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA2"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN2_O" physical_port="JA2" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA2"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN2_T" physical_port="JA2" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA2"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN3_I" physical_port="JA3" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA3"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN3_O" physical_port="JA3" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA3"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN3_T" physical_port="JA3" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA3"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN4_I" physical_port="JA4" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA4"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN4_O" physical_port="JA4" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA4"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN4_T" physical_port="JA4" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA4"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN7_I" physical_port="JA7" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA7"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN7_O" physical_port="JA7" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA7"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN7_T" physical_port="JA7" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA7"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN8_I" physical_port="JA8" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA8"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN8_O" physical_port="JA8" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA8"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN8_T" physical_port="JA8" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA8"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN9_I" physical_port="JA9" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA9"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN9_O" physical_port="JA9" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA9"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN9_T" physical_port="JA9" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA9"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN10_I" physical_port="JA10" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA10"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN10_O" physical_port="JA10" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA10"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN10_T" physical_port="JA10" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA10"/> 
+			</pin_maps>
+		  </port_map>
+        </port_maps>
+      </interface>
+      
+      <interface mode="master" name="grove0" type="xilinx.com:interface:gpio_rtl:1.0" of_component="grove0" preset_proc="grove0_preset">
+		  <preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+		  </preferred_ips>
+          <port_maps>
+            <port_map logical_port="TRI_O" physical_port="grove0_tri_o" dir="in" left="1" right="0">
+             <pin_maps> 
+              <pin_map port_index="0"  component_pin="GPIO_GROVE0_0"/> 
+              <pin_map port_index="1"  component_pin="GPIO_GROVE0_1"/> 
+             </pin_maps>
+            </port_map>
+            <port_map logical_port="TRI_I" physical_port="grove0_tri_i" dir="out" left="1" right="0"> 
+             <pin_maps>
+              <pin_map port_index="0"  component_pin="GPIO_GROVE0_0"/> 
+              <pin_map port_index="1"  component_pin="GPIO_GROVE0_1"/> 
+             </pin_maps>
+            </port_map>
+            <port_map logical_port="TRI_T" physical_port="grove0_tri_t" dir="out" left="1" right="0"> 
+             <pin_maps>
+              <pin_map port_index="0"  component_pin="GPIO_GROVE0_0"/> 
+              <pin_map port_index="1"  component_pin="GPIO_GROVE0_1"/> 
+             </pin_maps>			
+            </port_map>		 
+          </port_maps>
+        </interface>
+        
+        <interface mode="master" name="grove1" type="xilinx.com:interface:gpio_rtl:1.0" of_component="grove1" preset_proc="grove1_preset">
+		  <preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+		  </preferred_ips>
+          <port_maps>
+            <port_map logical_port="TRI_O" physical_port="grove1_tri_o" dir="in" left="1" right="0">
+             <pin_maps> 
+              <pin_map port_index="0"  component_pin="GPIO_GROVE1_0"/> 
+              <pin_map port_index="1"  component_pin="GPIO_GROVE1_1"/> 
+             </pin_maps>
+            </port_map>
+            <port_map logical_port="TRI_I" physical_port="grove1_tri_i" dir="out" left="1" right="0"> 
+             <pin_maps>
+              <pin_map port_index="0"  component_pin="GPIO_GROVE1_0"/> 
+              <pin_map port_index="1"  component_pin="GPIO_GROVE1_1"/> 
+             </pin_maps>
+            </port_map>
+            <port_map logical_port="TRI_T" physical_port="grove1_tri_t" dir="out" left="1" right="0"> 
+             <pin_maps>
+              <pin_map port_index="0"  component_pin="GPIO_GROVE1_0"/> 
+              <pin_map port_index="1"  component_pin="GPIO_GROVE1_1"/> 
+             </pin_maps>			
+            </port_map>		 
+          </port_maps>
+        </interface>
+      
+    </interfaces>
+  </component>
+  <component name="pl_sw_1bit" display_name="pl_sw_1bit" type="chip" sub_type="switch" major_group="gpio"/>
+  <component name="pl_led_g" display_name="pl_led_g" type="chip" sub_type="led" major_group="gpio"/>
+  <component name="pl_led_r" display_name="pl_led_r" type="chip" sub_type="led" major_group="gpio"/>
+  <component name="ps7_fixedio" display_name="ps7_fixedio" type="chip" sub_type="fixed_io" major_group=""/>
+  
+  <component name="pmoda" display_name="Pmod A" type="chip" sub_type="chip" major_group="Pmod">
+	<description>Pmod A</description>
+  </component>
+
+  <component name="grove0" display_name="grove0" type="chip" sub_type="chip" major_group="General Purpose Input or Output">
+    <description>Grove0 Connector</description>
+  </component>
+
+  <component name="grove1" display_name="grove1" type="chip" sub_type="chip" major_group="General Purpose Input or Output">
+    <description>Grove1 Connector</description>
+  </component> 	
+  
+</components>
+<jtag_chains>
+  <jtag_chain name="chain1">
+    <position name="0" component="part0"/>
+  </jtag_chain>
+</jtag_chains>
+<connections>
+    <connection name="part0_pl_sw_1bit" component1="part0" component2="pl_sw_1bit">
+      <connection_map name="part0_pl_sw_1bit_1" c1_st_index="0" c1_end_index="0" c2_st_index="0" c2_end_index="0"/>
+    </connection>
+    <connection name="part0_pl_led_g" component1="part0" component2="pl_led_g">
+      <connection_map name="part0_pl_led_g_1" c1_st_index="0" c1_end_index="0" c2_st_index="0" c2_end_index="0"/>
+    </connection>
+    <connection name="part0_pl_led_r" component1="part0" component2="pl_led_r">
+      <connection_map name="part0_pl_led_r_1" c1_st_index="0" c1_end_index="0" c2_st_index="0" c2_end_index="0"/>
+    </connection>
+    
+    <connection name="part0_pmoda" component1="part0" component2="pmoda">
+      <connection_map name="part0_pmoda_1" c1_st_index="11" c1_end_index="18" c2_st_index="0" c2_end_index="7"/>
+    </connection>
+    
+    <connection name="part0_grove0" component1="part0" component2="grove0">
+      <connection_map name="Part0_grove0" typical_delay="5" c1_st_index="34" c1_end_index="35" c2_st_index="0" c2_end_index="1"/>
+    </connection>
+
+	<connection name="part0_grove1" component1="part0" component2="grove1">
+      <connection_map name="Part0_grove1" typical_delay="5" c1_st_index="36" c1_end_index="37" c2_st_index="0" c2_end_index="1"/>
+   </connection>
+
+</connections>
+</board>

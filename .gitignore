@@ -1,0 +1,5 @@
+*~
+Tests/*
+!Tests/Test04_DDR3_MIG/*
+
+
