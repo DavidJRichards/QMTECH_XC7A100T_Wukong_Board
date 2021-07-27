@@ -27,60 +27,63 @@
 		<pin index="24" name ="JB8" iostandard="LVCMOS33" loc="G4"/>
 		<pin index="25" name ="JB9" iostandard="LVCMOS33" loc="B4"/>
 		<pin index="26" name ="JB10" iostandard="LVCMOS33" loc="B5"/>
+
 		<pin index="34" name ="GPIO_GROVE0_0" iostandard="LVCMOS18" loc="AB26"/>
 		<pin index="35" name ="GPIO_GROVE0_1" iostandard="LVCMOS18" loc="AC26"/>
 		<pin index="36" name ="GPIO_GROVE1_0" iostandard="LVCMOS18" loc="AB24"/>
 		<pin index="37" name ="GPIO_GROVE1_1" iostandard="LVCMOS18" loc="AC24"/>
-		<pin index="54" name ="shield_dp0_dp19_tri_i_0" iostandard="LVCMOS33" loc="AB26"/>
-		<pin index="55" name ="shield_dp0_dp19_tri_i_1" iostandard="LVCMOS33" loc="AC26"/>
-		<pin index="56" name ="shield_dp0_dp19_tri_i_2" iostandard="LVCMOS33" loc="AB24"/>
-		<pin index="57" name ="shield_dp0_dp19_tri_i_3" iostandard="LVCMOS33" loc="AC24"/>
-		<pin index="58" name ="shield_dp0_dp19_tri_i_4" iostandard="LVCMOS33" loc="AA24"/>
-		<pin index="59" name ="shield_dp0_dp19_tri_i_5" iostandard="LVCMOS33" loc="AB25"/>
-		<pin index="60" name ="shield_dp0_dp19_tri_i_6" iostandard="LVCMOS33" loc="AA22"/>
-		<pin index="61" name ="shield_dp0_dp19_tri_i_7" iostandard="LVCMOS33" loc="AA23"/>
-		<pin index="62" name ="shield_dp0_dp19_tri_i_8" iostandard="LVCMOS33" loc="Y25"/>
-		<pin index="63" name ="shield_dp0_dp19_tri_i_9" iostandard="LVCMOS33" loc="AA25"/>
-		<pin index="64" name ="shield_dp0_dp19_tri_i_10" iostandard="LVCMOS33" loc="W25"/>
-		<pin index="65" name ="shield_dp0_dp19_tri_i_11" iostandard="LVCMOS33" loc="Y26"/>
-		<pin index="66" name ="shield_dp0_dp19_tri_i_12" iostandard="LVCMOS33" loc="Y22"/>
-		<pin index="67" name ="shield_dp0_dp19_tri_i_13" iostandard="LVCMOS33" loc="Y23"/>
-		<pin index="68" name ="shield_dp0_dp19_tri_i_14" iostandard="LVCMOS33" loc="W21"/>
-		<pin index="69" name ="shield_dp0_dp19_tri_i_15" iostandard="LVCMOS33" loc="Y21"/>
-		<pin index="70" name ="shield_dp0_dp19_tri_i_16" iostandard="LVCMOS33" loc="V26"/>
-		<pin index="71" name ="shield_dp0_dp19_tri_i_17" iostandard="LVCMOS33" loc="W26"/>
-		<pin index="72" name ="shield_dp0_dp19_tri_i_18" iostandard="LVCMOS33" loc="U25"/>
-		<pin index="73" name ="shield_dp0_dp19_tri_i_19" iostandard="LVCMOS33" loc="U26"/>
-		<pin index="74" name ="shield_dp0_dp19_tri_i_20" iostandard="LVCMOS33" loc="V24"/>
-		<pin index="75" name ="shield_dp0_dp19_tri_i_21" iostandard="LVCMOS33" loc="W24"/>
-		<pin index="76" name ="shield_dp0_dp19_tri_i_22" iostandard="LVCMOS33" loc="V23"/>
-		<pin index="77" name ="shield_dp0_dp19_tri_i_23" iostandard="LVCMOS33" loc="W23"/>
-		<pin index="78" name ="shield_dp0_dp19_tri_i_24" iostandard="LVCMOS33" loc="V18"/>
-		<pin index="79" name ="shield_dp0_dp19_tri_i_25" iostandard="LVCMOS33" loc="W18"/>
-		<pin index="80" name ="shield_dp0_dp19_tri_i_26" iostandard="LVCMOS33" loc="U22"/>
-		<pin index="81" name ="shield_dp0_dp19_tri_i_27" iostandard="LVCMOS33" loc="V22"/>
-		<pin index="82" name ="shield_dp0_dp19_tri_i_28" iostandard="LVCMOS33" loc="U21"/>
-		<pin index="83" name ="shield_dp0_dp19_tri_i_29" iostandard="LVCMOS33" loc="V21"/>
-		<pin index="84" name ="shield_dp0_dp19_tri_i_30" iostandard="LVCMOS33" loc="T20"/>
-		<pin index="85" name ="shield_dp0_dp19_tri_i_31" iostandard="LVCMOS33" loc="U20"/>
-		<pin index="86" name ="shield_dp0_dp19_tri_i_32" iostandard="LVCMOS33" loc="T19"/>
-		<pin index="87" name ="shield_dp0_dp19_tri_i_33" iostandard="LVCMOS33" loc="U19"/>
-		<pin index="174" name ="shield_dp26_dp41_tri_i_0" iostandard="LVCMOS33" loc="H21"/>
-		<pin index="175" name ="shield_dp26_dp41_tri_i_1" iostandard="LVCMOS33" loc="H22"/>
-		<pin index="176" name ="shield_dp26_dp41_tri_i_2" iostandard="LVCMOS33" loc="K21"/>
-		<pin index="177" name ="shield_dp26_dp41_tri_i_3" iostandard="LVCMOS33" loc="J21"/>
-		<pin index="178" name ="shield_dp26_dp41_tri_i_4" iostandard="LVCMOS33" loc="H26"/>
-		<pin index="179" name ="shield_dp26_dp41_tri_i_5" iostandard="LVCMOS33" loc="G26"/>
-		<pin index="180" name ="shield_dp26_dp41_tri_i_6" iostandard="LVCMOS33" loc="G25"/>
-		<pin index="181" name ="shield_dp26_dp41_tri_i_7" iostandard="LVCMOS33" loc="F25"/>
-		<pin index="182" name ="shield_dp26_dp41_tri_i_8" iostandard="LVCMOS33" loc="G20"/>
-		<pin index="183" name ="shield_dp26_dp41_tri_i_9" iostandard="LVCMOS33" loc="G21"/>
-		<pin index="184" name ="shield_dp26_dp41_tri_i_10" iostandard="LVCMOS33" loc="F23"/>
-		<pin index="185" name ="shield_dp26_dp41_tri_i_11" iostandard="LVCMOS33" loc="E23"/>
-		<pin index="186" name ="shield_dp26_dp41_tri_i_12" iostandard="LVCMOS33" loc="E26"/>
-		<pin index="187" name ="shield_dp26_dp41_tri_i_13" iostandard="LVCMOS33" loc="D26"/>
-		<pin index="188" name ="shield_dp26_dp41_tri_i_14" iostandard="LVCMOS33" loc="E25"/>
-		<pin index="189" name ="shield_dp26_dp41_tri_i_15" iostandard="LVCMOS33" loc="D25"/>
+
+		<pin index="54" name ="expio_gpio_tri_i_0" iostandard="LVCMOS33" loc="AB26"/>
+		<pin index="55" name ="expio_gpio_tri_i_1" iostandard="LVCMOS33" loc="AC26"/>
+		<pin index="56" name ="expio_gpio_tri_i_2" iostandard="LVCMOS33" loc="AB24"/>
+		<pin index="57" name ="expio_gpio_tri_i_3" iostandard="LVCMOS33" loc="AC24"/>
+		<pin index="58" name ="expio_gpio_tri_i_4" iostandard="LVCMOS33" loc="AA24"/>
+		<pin index="59" name ="expio_gpio_tri_i_5" iostandard="LVCMOS33" loc="AB25"/>
+		<pin index="60" name ="expio_gpio_tri_i_6" iostandard="LVCMOS33" loc="AA22"/>
+		<pin index="61" name ="expio_gpio_tri_i_7" iostandard="LVCMOS33" loc="AA23"/>
+		<pin index="62" name ="expio_gpio_tri_i_8" iostandard="LVCMOS33" loc="Y25"/>
+		<pin index="63" name ="expio_gpio_tri_i_9" iostandard="LVCMOS33" loc="AA25"/>
+		<pin index="64" name ="expio_gpio_tri_i_10" iostandard="LVCMOS33" loc="W25"/>
+		<pin index="65" name ="expio_gpio_tri_i_11" iostandard="LVCMOS33" loc="Y26"/>
+		<pin index="66" name ="expio_gpio_tri_i_12" iostandard="LVCMOS33" loc="Y22"/>
+		<pin index="67" name ="expio_gpio_tri_i_13" iostandard="LVCMOS33" loc="Y23"/>
+		<pin index="68" name ="expio_gpio_tri_i_14" iostandard="LVCMOS33" loc="W21"/>
+		<pin index="69" name ="expio_gpio_tri_i_15" iostandard="LVCMOS33" loc="Y21"/>
+		<pin index="70" name ="expio_gpio_tri_i_16" iostandard="LVCMOS33" loc="V26"/>
+		<pin index="71" name ="expio_gpio_tri_i_17" iostandard="LVCMOS33" loc="W26"/>
+		<pin index="72" name ="expio_gpio_tri_i_18" iostandard="LVCMOS33" loc="U25"/>
+		<pin index="73" name ="expio_gpio_tri_i_19" iostandard="LVCMOS33" loc="U26"/>
+		<pin index="74" name ="expio_gpio_tri_i_20" iostandard="LVCMOS33" loc="V24"/>
+		<pin index="75" name ="expio_gpio_tri_i_21" iostandard="LVCMOS33" loc="W24"/>
+		<pin index="76" name ="expio_gpio_tri_i_22" iostandard="LVCMOS33" loc="V23"/>
+		<pin index="77" name ="expio_gpio_tri_i_23" iostandard="LVCMOS33" loc="W23"/>
+		<pin index="78" name ="expio_gpio_tri_i_24" iostandard="LVCMOS33" loc="V18"/>
+		<pin index="79" name ="expio_gpio_tri_i_25" iostandard="LVCMOS33" loc="W18"/>
+		<pin index="80" name ="expio_gpio_tri_i_26" iostandard="LVCMOS33" loc="U22"/>
+		<pin index="81" name ="expio_gpio_tri_i_27" iostandard="LVCMOS33" loc="V22"/>
+		<pin index="82" name ="expio_gpio_tri_i_28" iostandard="LVCMOS33" loc="U21"/>
+		<pin index="83" name ="expio_gpio_tri_i_29" iostandard="LVCMOS33" loc="V21"/>
+		<pin index="84" name ="expio_gpio_tri_i_30" iostandard="LVCMOS33" loc="T20"/>
+		<pin index="85" name ="expio_gpio_tri_i_31" iostandard="LVCMOS33" loc="U20"/>
+		<pin index="86" name ="expio_gpio_tri_i_32" iostandard="LVCMOS33" loc="T19"/>
+		<pin index="87" name ="expio_gpio_tri_i_33" iostandard="LVCMOS33" loc="U19"/>
+
+		<pin index="174" name ="expio_camera_tri_i_0" iostandard="LVCMOS33" loc="H21"/>
+		<pin index="175" name ="expio_camera_tri_i_1" iostandard="LVCMOS33" loc="H22"/>
+		<pin index="176" name ="expio_camera_tri_i_2" iostandard="LVCMOS33" loc="K21"/>
+		<pin index="177" name ="expio_camera_tri_i_3" iostandard="LVCMOS33" loc="J21"/>
+		<pin index="178" name ="expio_camera_tri_i_4" iostandard="LVCMOS33" loc="H26"/>
+		<pin index="179" name ="expio_camera_tri_i_5" iostandard="LVCMOS33" loc="G26"/>
+		<pin index="180" name ="expio_camera_tri_i_6" iostandard="LVCMOS33" loc="G25"/>
+		<pin index="181" name ="expio_camera_tri_i_7" iostandard="LVCMOS33" loc="F25"/>
+		<pin index="182" name ="expio_camera_tri_i_8" iostandard="LVCMOS33" loc="G20"/>
+		<pin index="183" name ="expio_camera_tri_i_9" iostandard="LVCMOS33" loc="G21"/>
+		<pin index="184" name ="expio_camera_tri_i_10" iostandard="LVCMOS33" loc="F23"/>
+		<pin index="185" name ="expio_camera_tri_i_11" iostandard="LVCMOS33" loc="E23"/>
+		<pin index="186" name ="expio_camera_tri_i_12" iostandard="LVCMOS33" loc="E26"/>
+		<pin index="187" name ="expio_camera_tri_i_13" iostandard="LVCMOS33" loc="D26"/>
+		<pin index="188" name ="expio_camera_tri_i_14" iostandard="LVCMOS33" loc="E25"/>
+		<pin index="189" name ="expio_camera_tri_i_15" iostandard="LVCMOS33" loc="D25"/>
 		<pin index="94" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="E3"/>
 		<pin index="95" name ="usb_uart_txd" iostandard="LVCMOS33" loc="F3"/>
 	</pins>
