@@ -182,19 +182,19 @@
 								<pin_map port_index="0" component_pin="qspi_csn_i"/>
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="SCK_I" physical_port="qspi_sclk_i" dir="in">
+						<port_map logical_port="SCK_I" physical_port="qspi_sck_i" dir="in">
 							<pin_maps>
-								<pin_map port_index="0" component_pin="qspi_sclk_i"/>
+								<pin_map port_index="0" component_pin="qspi_sck_i"/>
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="SCK_O" physical_port="qspi_sclk_o" dir="out">
+						<port_map logical_port="SCK_O" physical_port="qspi_sck_o" dir="out">
 							<pin_maps>
-								<pin_map port_index="0" component_pin="qspi_sclk_i"/>
+								<pin_map port_index="0" component_pin="qspi_sck_i"/>
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="SCK_T" physical_port="qspi_sclk_t" dir="out">
+						<port_map logical_port="SCK_T" physical_port="qspi_sck_t" dir="out">
 							<pin_maps>
-								<pin_map port_index="0" component_pin="qspi_sclk_i"/>
+								<pin_map port_index="0" component_pin="qspi_sck_i"/>
 							</pin_maps>
 						</port_map>
 					</port_maps>
@@ -861,7 +861,7 @@
   </component>
 
 		<component name="ps7_fixedio" display_name="ps7_fixedio" type="chip" sub_type="fixed_io" major_group=""/>
-		<component name="qspi_flash" display_name="Quad SPI Flash" type="chip" sub_type="memory_flash_qspi" major_group="External Memory" part_name="S25FL128L" vendor="Cypress" spec_url="https://www.cypress.com/documentation/datasheets/s25fl256ls25fl128l-256-mbit-32-mbyte128-mbit-16-mbyte-30-v-fl-l-flash">
+		<component name="qspi_flash" display_name="Quad SPI Flash" type="chip" sub_type="memory_flash_qspi" major_group="External Memory" part_name="S25FL128L" vendor="Spansion" spec_url="https://www.cypress.com/documentation/datasheets/s25fl256ls25fl128l-256-mbit-32-mbyte128-mbit-16-mbyte-30-v-fl-l-flash">
 			<description>16 MB of nonvolatile storage that can be used for configuration or data storage</description>
 		</component>
 		<component name="ja" display_name="Connector JA" type="chip" sub_type="chip" major_group="Pmod">

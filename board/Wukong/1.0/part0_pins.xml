@@ -1,9 +1,9 @@
 <part_info part_name="xc7a100tfgg676-2">
 	<pins>
 		<pin index="0" name ="clk" iostandard="LVCMOS33" loc="M21"/>
-		<pin index="29" name ="reset" iostandard="LVCMOS33" loc="AE16"/>
+		<pin index="29" name ="reset" iostandard="LVCMOS33" loc="H7"/>
 
-  <pin index="1" name ="push_buttons_2bits_tri_i_0" iostandard="LVCMOS33" loc="H7"/>
+  <pin index="1" name ="push_buttons_2bits_tri_i_0" iostandard="LVCMOS33" loc="AA24"/>
   <pin index="2" name ="push_buttons_2bits_tri_i_1" iostandard="LVCMOS33" loc="M6"/>
 
   <pin index="3" name ="led_2bits_tri_o_0" iostandard="LVCMOS33" loc="V16"/>
@@ -14,7 +14,8 @@
 		<pin index="7" name ="qspi_db1_i" iostandard="LVCMOS33" loc="R15"/>
 		<pin index="8" name ="qspi_db2_i" iostandard="LVCMOS33" loc="P14"/>
 		<pin index="9" name ="qspi_db3_i" iostandard="LVCMOS33" loc="N14"/>
-		<pin index="10" name ="qspi_sclk_i" iostandard="LVCMOS33" loc="H13"/>
+		<pin index="10" name ="qspi_sck_i" iostandard="LVCMOS33" loc="H13"/>
+
 		<pin index="11" name ="JA1" iostandard="LVCMOS33" loc="D5"/>
 		<pin index="12" name ="JA2" iostandard="LVCMOS33" loc="G5"/>
 		<pin index="13" name ="JA3" iostandard="LVCMOS33" loc="G7"/>

@@ -110,7 +110,7 @@
 		<emrDllEnable name="DLL Enable" >Enable</emrDllEnable>
 		<emrOutputDriveStrength name="Output Driver Impedance Control" >RZQ/6</emrOutputDriveStrength>
 		<emrMirrorSelection name="Address Mirroring" >Disable</emrMirrorSelection>
-		<emrCSSelection name="Controller Chip Select Pin" >Enable</emrCSSelection>
+		<emrCSSelection name="Controller Chip Select Pin" >Disable</emrCSSelection>
 		<emrRTT name="RTT (nominal) - On Die Termination (ODT)" >RZQ/6</emrRTT>
 		<emrPosted name="Additive Latency (AL)" >0</emrPosted>
 		<emrOCD name="Write Leveling Enable" >Disabled</emrOCD>
