@@ -1,10 +1,14 @@
 <part_info part_name="xc7a100tfgg676-2">
 	<pins>
 		<pin index="0" name ="clk" iostandard="LVCMOS33" loc="M21"/>
-		<pin index="1" name ="reset" iostandard="LVCMOS33" loc="H7"/>
-		<pin index="2" name ="pl_sw_1bit_tri_i" iostandard="LVCMOS33" loc="M6"/>
-		<pin index="3" name ="pl_led_r_tri_o" iostandard="LVCMOS33" loc="V16"/>
-		<pin index="4" name ="pl_led_g_tri_o" iostandard="LVCMOS33" loc="V17"/>
+		<pin index="29" name ="reset" iostandard="LVCMOS33" loc="AE16"/>
+
+  <pin index="1" name ="push_buttons_2bits_tri_i_0" iostandard="LVCMOS33" loc="H7"/>
+  <pin index="2" name ="push_buttons_2bits_tri_i_1" iostandard="LVCMOS33" loc="M6"/>
+
+  <pin index="3" name ="led_2bits_tri_o_0" iostandard="LVCMOS33" loc="V16"/>
+  <pin index="4" name ="led_2bits_tri_o_1" iostandard="LVCMOS33" loc="V17"/>
+
 		<pin index="5" name ="qspi_csn_i" iostandard="LVCMOS33" loc="P18"/>
 		<pin index="6" name ="qspi_db0_i" iostandard="LVCMOS33" loc="R14"/>
 		<pin index="7" name ="qspi_db1_i" iostandard="LVCMOS33" loc="R15"/>
@@ -27,6 +31,9 @@
 		<pin index="24" name ="JB8" iostandard="LVCMOS33" loc="G4"/>
 		<pin index="25" name ="JB9" iostandard="LVCMOS33" loc="B4"/>
 		<pin index="26" name ="JB10" iostandard="LVCMOS33" loc="B5"/>
+
+		<pin index="27" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="E3"/>
+		<pin index="28" name ="usb_uart_txd" iostandard="LVCMOS33" loc="F3"/>
 
 		<pin index="34" name ="GPIO_GROVE0_0" iostandard="LVCMOS18" loc="AB26"/>
 		<pin index="35" name ="GPIO_GROVE0_1" iostandard="LVCMOS18" loc="AC26"/>
@@ -84,8 +91,41 @@
 		<pin index="187" name ="expio_camera_tri_i_13" iostandard="LVCMOS33" loc="D26"/>
 		<pin index="188" name ="expio_camera_tri_i_14" iostandard="LVCMOS33" loc="E25"/>
 		<pin index="189" name ="expio_camera_tri_i_15" iostandard="LVCMOS33" loc="D25"/>
-		<pin index="94" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="E3"/>
-		<pin index="95" name ="usb_uart_txd" iostandard="LVCMOS33" loc="F3"/>
+  
+		<pin index="150" name ="expio_mgt_txn3" iostandard="LVCMOS33" loc="AF7"/>
+		<pin index="151" name ="expio_mgt_txp3" iostandard="LVCMOS33" loc="AE7"/>
+		<pin index="152" name ="expio_mgt_txn2" iostandard="LVCMOS33" loc="AD8"/>
+		<pin index="153" name ="expio_mgt_txp2" iostandard="LVCMOS33" loc="AC8"/>
+		<pin index="154" name ="expio_mgt_txn1" iostandard="LVCMOS33" loc="AF9"/>
+		<pin index="155" name ="expio_mgt_txp1" iostandard="LVCMOS33" loc="AE9"/>
+		<pin index="156" name ="expio_mgt_txn0" iostandard="LVCMOS33" loc="AD10"/>
+		<pin index="157" name ="expio_mgt_txp0" iostandard="LVCMOS33" loc="AC10"/>
+		<pin index="158" name ="expio_mgt_clk1n" iostandard="LVCMOS33" loc="AA11"/>
+		<pin index="159" name ="expio_mgt_clk1p" iostandard="LVCMOS33" loc="AB11"/>
+		<pin index="160" name ="expio_mgt_rxn3" iostandard="LVCMOS33" loc="AF11"/>
+		<pin index="161" name ="expio_mgt_rxp3" iostandard="LVCMOS33" loc="AE11"/>
+		<pin index="162" name ="expio_mgt_rxn2" iostandard="LVCMOS33" loc="AD14"/>
+		<pin index="163" name ="expio_mgt_rxp2" iostandard="LVCMOS33" loc="AC14"/>
+		<pin index="164" name ="expio_mgt_rxn1" iostandard="LVCMOS33" loc="AF13"/>
+		<pin index="165" name ="expio_mgt_rxp1" iostandard="LVCMOS33" loc="AE13"/>
+		<pin index="166" name ="expio_mgt_rxn0" iostandard="LVCMOS33" loc="AD12"/>
+		<pin index="167" name ="expio_mgt_rxp0" iostandard="LVCMOS33" loc="AC12"/>
+  
+  <pin index="88" name ="TMDS_OUT_clk_p" iostandard="LVCMOS33" loc="D4"/>
+  <pin index="89" name ="TMDS_OUT_clk_n" iostandard="LVCMOS33" loc="C4"/>
+  <pin index="90" name ="TMDS_OUT_data_p_0" iostandard="LVCMOS33" loc="E1"/>
+  <pin index="91" name ="TMDS_OUT_data_p_1" iostandard="LVCMOS33" loc="F2"/>
+  <pin index="92" name ="TMDS_OUT_data_p_2" iostandard="LVCMOS33" loc="G2"/>
+  <pin index="93" name ="TMDS_OUT_data_n_0" iostandard="LVCMOS33" loc="D1"/>
+  <pin index="94" name ="TMDS_OUT_data_n_1" iostandard="LVCMOS33" loc="E2"/>
+  <pin index="95" name ="TMDS_OUT_data_n_2" iostandard="LVCMOS33" loc="G1"/>
+    
+  <pin index="96" name ="hdmi_in_ddc_scl" iostandard="LVCMOS33" loc="B2"/>
+  <pin index="97" name ="hdmi_in_ddc_sda" iostandard="LVCMOS33" loc="A2"/>
+  
+  <pin index="98" name ="hdmi_tx_cec" iostandard="LVCMOS33" loc="B1"/>
+  <pin index="99" name ="hdmi_tx_hpd" iostandard="LVCMOS33" loc="A3"/>
+
 	</pins>
 </part_info>
 
