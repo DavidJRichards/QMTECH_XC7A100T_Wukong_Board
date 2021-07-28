@@ -33,8 +33,8 @@
 		<pin index="25" name ="JB9" iostandard="LVCMOS33" loc="B4"/>
 		<pin index="26" name ="JB10" iostandard="LVCMOS33" loc="B5"/>
 
-		<pin index="27" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="E3"/>
-		<pin index="28" name ="usb_uart_txd" iostandard="LVCMOS33" loc="F3"/>
+		<pin index="27" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="F3"/>
+		<pin index="28" name ="usb_uart_txd" iostandard="LVCMOS33" loc="E3"/>
 
 		<pin index="34" name ="GPIO_GROVE0_0" iostandard="LVCMOS18" loc="AB26"/>
 		<pin index="35" name ="GPIO_GROVE0_1" iostandard="LVCMOS18" loc="AC26"/>
