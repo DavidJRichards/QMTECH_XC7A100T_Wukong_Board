@@ -7,6 +7,27 @@ Board definition files not yet working except for simple outline with part numbe
 
 ![Wukong.jpg](./images/Wukong.jpg)
 
+## Connections
+
+### Pmod A
+|     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|
+|3V3|Gnd|G8|G7|G5|D5|
+|3V3|Gnd|G6|D6|E6|E5|
+
+### Pmod B
+
+|     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|
+|3V3|Gnd|A5|A4|F4|H4|
+|3V3|Gnd|B5|B4|G4|J4|
+
+### Camera
+
+|     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|3V3|H21|K21|H26|G25|G20|F23|E26|E25|
+|Gnd|H22|J21|G26|F25|G21|E23|D26|D25|
 
 ### Board automation demo
 https://www.fpgadeveloper.com/2017/11/artix-7-arty-base-project.html/
