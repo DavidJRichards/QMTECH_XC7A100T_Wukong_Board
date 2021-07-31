@@ -13,6 +13,11 @@ Board definition files and initial example programs
 
 [Schematic](./Documents/QMTECH-XC7A100T_200T-Wukong-Board-V02-20210426.pdf)
 
+## board definition
+
+A set of board definition files are available which enable board automation. a tcl script to recreate an semi automated design are here:
+
+[block design](./Tests/Test10_BD)
 
 ## Connections
 
