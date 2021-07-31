@@ -1,0 +1,11 @@
+set_property IOSTANDARD LVCMOS33 [get_ports {led_1[1]}]
+set_property PACKAGE_PIN V16 [get_ports {led_1[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_1[0]}]
+set_property PACKAGE_PIN V17 [get_ports {led_1[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_clk]
+set_property PACKAGE_PIN M21 [get_ports sys_clk]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_rst_n]
+set_property PACKAGE_PIN H7 [get_ports sys_rst_n]
+
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {sys_clk_IBUF}]
+set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]

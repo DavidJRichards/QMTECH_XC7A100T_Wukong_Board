@@ -1,5 +1,10 @@
 *~
-Tests/*
+Tests/Test04*
+Tests/Test05*
+Tests/Test06*
+Tests/Test08*
 !Tests/Test04_DDR3_MIG/*
-
-
+zed-68k-arty-gd
+HelloCircles.jpg
+*webtalk*
+*project_1*

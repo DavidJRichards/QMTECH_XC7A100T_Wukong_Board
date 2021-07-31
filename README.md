@@ -1,6 +1,8 @@
 # QMTECH_XC7A100T_Wukong_Board
 Board definition files and initial example programs
 
+[Github Link](https://github.com/DavidJRichards/QMTECH_XC7A100T_Wukong_Board)
+
 2nd revision board, original data from [https://github.com/ChinaQMTECH/XC7A100T-200T_Wukong_Board](https://github.com/ChinaQMTECH/XC7A100T-200T_Wukong_Board)
 
 ![Wukong.jpg](./images/Wukong.jpg)
@@ -14,7 +16,7 @@ Board definition files and initial example programs
 
 ## Connections
 
-### Pmod A
+### Pmod A (Corner, J10)
 
 |     |     |     |     |     |     |
 |-----|-----|-----|-----|-----|-----|
@@ -35,7 +37,7 @@ Board definition files and initial example programs
 
 
 
-### Pmod B
+### Pmod B (Middle, J11)
 
 |     |     |     |     |     |     |
 |-----|-----|-----|-----|-----|-----|
@@ -120,8 +122,19 @@ Board definition files and initial example programs
 
 [Video 2](https://www.youtube.com/watch?v=8lrA5vrWgfo&t=4s)
 
+### verilog-ethernet
+
+[Doxygen](http://djrm.netmx.co.uk/ebaz4205/verilog-ethernet/md_example_Wukong_fpga_README.html)
+
+[Github](https://github.com/DavidJRichards/verilog-ethernet/tree/master/example/Wukong/fpga)
 
 ### Xilinx & RTL8211EG example
+
+[TCP/IP stack in SystemVerilog by hypernyan](https://www.librecores.org/hypernyan/ethvlg)
+
+[a TCP stack document](http://csg.csail.mit.edu/6.375/6_375_2019_www/handouts/finals/Group_7_report.pdf)
+
+[a TCP stack implementation](https://github.com/DavidJRichards/verilog-ethernet/tree/master/example/Wukong/fpga#readme)
 
 [RTL8211EG data](./Documents/rtl8211e-g-vb-vl-cg_datasheet_1-045de.pdf)
 
