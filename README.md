@@ -147,6 +147,27 @@ export PATH=$PATH:$(echo $PWD/riscv64-*/bin/)
 ./qmtech_wukong.py --with-sdcard --with-ethernet  --with-video-terminal   --build --load
 ```
 
+### modified files:
+
+```
+/home/david/litex-boards/litex_boards/platforms/qmtech_wukong.py
+change constraints for later wukong board
+add sdcard pins
+add ps/2 keyboard from digilent board
+
+/home/david/litex-boards/litex_boards/targets/qmtech_wukong.py
+add sdcard
+change DVI resolution
+
+/home/david/litex/litex/soc/software/bios/boot.c
+change local and remote ip
+
+/home/david/litex/litex/soc/software/bios/main.c
+try adding add some whitespace before boot logo to suppress logo corruption
+
+```
+
+
 ### Mandelbrot demo
 
 [FPGA-Mandelbrot](https://github.com/DavidJRichards/FPGA-Mandelbrot)
