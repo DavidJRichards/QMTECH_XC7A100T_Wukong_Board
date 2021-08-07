@@ -21,6 +21,16 @@ A set of board definition files are available which enable board automation. a t
 
 ## Connections
 
+### Micro SD card socket
+
+|     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|1|2|3|4|5|6|7|8|9|
+|D2|D3|CMD|VDD|CLK|VSS|D0|D1|CD|
+|H6|J6|L4|3v3|J8|Gnd|M5|M7|N6|
+
+
+
 ### Pmod A (Corner, J10)
 
 |     |     |     |     |     |     |
@@ -29,17 +39,6 @@ A set of board definition files are available which enable board automation. a t
 |3V3|Gnd|G8|G7|G5|D5|
 |3V3|Gnd|G6|D6|E6|E5|
 |12|11|10|9|8|7|
-
-#### PS/2 keyboard on pmod a bottom row
-
-|     |     |     |     |     |     |
-|-----|-----|-----|-----|-----|-----|
-|12|11|10|9|8|7|
-|3V3|Gnd|G6|D6|n/c|n/c|
-|Vcc|Gnd|Data|Clock|
-|Mauve|Blue|Grey|White|||
-|1|2|3|4|||
-
 
 
 ### Pmod B (Middle, J11)
@@ -60,7 +59,16 @@ A set of board definition files are available which enable board automation. a t
 |Gnd|H22|J21|G26|F25|G21|E23|D26|D25|
 |2|4|6|8|!0|12|14|16|18|
 
-#### Camera add-on board (ebaz version)
+
+#### unused
+ * 7-H26
+ * 8-G26
+ * 18-D25
+
+## Addon boards (originally built for ebaz)
+
+
+#### Camera add-on board
 
 |     |     |     |     |     |     |     |     |     |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -69,19 +77,9 @@ A set of board definition files are available which enable board automation. a t
 |Gnd|SDA|HS|XLK|D6|D4|D2|D0|PWDN|
 |2|4|6|8|!0|12|14|16|18|
 
-#### Micro SD add-on connections
 
-|     |     |     |     |     |     |
-|-----|-----|-----|-----|-----|-----|
-|3V3|Gnd|SCLK|CS|MOSI|MISO|
-|3V3|Gnd|H21|H22|H26|G26|
-
-#### single pmod connections
-
-|     |     |     |     |     |     |
-|-----|-----|-----|-----|-----|-----|
-|6|5|4|3|2|1|
-|3V3|Gnd|G26|H26|H22|H21|
+#### led & Button
+ * G25
 
 #### double pmod connections
 
@@ -92,13 +90,31 @@ A set of board definition files are available which enable board automation. a t
 |3V3|Gnd|G25|F25|G20|G21|
 |12|11|10|9|8|7|
 
-#### led & Button
- * G25
+#### single pmod connections
 
-#### unused
- * 7-H26
- * 8-G26
- * 18-D25
+|     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|
+|6|5|4|3|2|1|
+|3V3|Gnd|G26|H26|H22|H21|
+
+
+#### Micro SD add-on connections
+
+|     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|
+|3V3|Gnd|SCLK|CS|MOSI|MISO|
+|3V3|Gnd|H21|H22|H26|G26|
+
+
+#### PS/2 keyboard on pmod a bottom row
+
+|     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|
+|12|11|10|9|8|7|
+|3V3|Gnd|G6|D6|n/c|n/c|
+|Vcc|Gnd|Data|Clock|
+|Mauve|Blue|Grey|White|||
+|1|2|3|4|||
 
 
 
@@ -114,7 +130,22 @@ A set of board definition files are available which enable board automation. a t
 
 [Test08_GMII_Ethernet](./Tests/Test08_GMII_Ethernet)
 
+## Litex configuration files
 
+Litex board files suitable for revision 2.0 of the Wukong board, copy into Litex-boards directories
+
+[platform](./Litex/platforms/qmtech_wukong.py)
+
+[target](./Litex/targets/qmtech_wukong.py)
+
+### Build instructions with Vivado
+
+```
+source /opt/Xilinx/Vivado/2020.2/settings64.sh
+cd /home/david/litex-boards/litex_boards/targets/build/qmtech_wukong
+export PATH=$PATH:$(echo $PWD/riscv64-*/bin/)
+./qmtech_wukong.py --with-sdcard --with-ethernet  --with-video-terminal   --build --load
+```
 
 ### Mandelbrot demo
 
